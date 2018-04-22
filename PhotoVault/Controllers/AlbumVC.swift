@@ -24,13 +24,21 @@ class AlbumVC: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        
-        print("loaded album vc...")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         updateAlbums()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == TO_VIEW_ALBUM {
+            if let viewAlbumVC = segue.destination as? ViewAlbumVC {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    viewAlbumVC.initData(title: albums[indexPath.row].title!)
+                }
+            }
+        }
     }
     
     @IBAction func addBtnPressed(_ sender: Any) {
@@ -138,6 +146,11 @@ class AlbumVC: UIViewController {
         } catch {
             debugPrint("Could not remove album: \(error.localizedDescription)")
         }
+    }
+    
+    // Checks
+    func doesAlbumExist(title: String) -> Bool {
+        return false
     }
 }
 

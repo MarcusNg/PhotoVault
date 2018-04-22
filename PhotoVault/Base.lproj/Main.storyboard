@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,7 +79,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Your Albums" id="Mxe-8K-d5d">
-                        <barButtonItem key="leftBarButtonItem" image="settings" id="yi6-EP-3bn">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="yi6-EP-3bn">
                             <connections>
                                 <action selector="settingsBtnPressed:" destination="BYZ-38-t0r" id="G26-iW-zz9"/>
                             </connections>
@@ -99,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="600.79999999999995" y="132.68365817091455"/>
         </scene>
-        <!--View AlbumVC-->
+        <!--Album-->
         <scene sceneID="pBq-48-QFf">
             <objects>
                 <viewController id="wKt-Bf-ZnB" customClass="ViewAlbumVC" customModule="PhotoVault" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,19 +112,33 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="20t-fh-CUq">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="120" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="np8-CK-bcM">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="np8-CK-bcM" customClass="PhotoCell" customModule="PhotoVault" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QLe-HP-e8m">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="QLe-HP-e8m" secondAttribute="bottom" id="3JV-L1-Uol"/>
+                                            <constraint firstItem="QLe-HP-e8m" firstAttribute="leading" secondItem="np8-CK-bcM" secondAttribute="leading" id="WOh-v8-usO"/>
+                                            <constraint firstAttribute="trailing" secondItem="QLe-HP-e8m" secondAttribute="trailing" id="kT4-VZ-m0X"/>
+                                            <constraint firstItem="QLe-HP-e8m" firstAttribute="top" secondItem="np8-CK-bcM" secondAttribute="top" id="q7o-PX-9pz"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="QLe-HP-e8m" id="Igr-bo-bRg"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -137,12 +152,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G03-4P-r2e"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Album" id="jml-xH-Of5">
+                        <barButtonItem key="rightBarButtonItem" image="addPhoto" id="UOq-lj-dKS">
+                            <connections>
+                                <action selector="addPhotoBtnPressed:" destination="wKt-Bf-ZnB" id="GFm-vX-4a6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="31p-3K-adP" id="KNn-Q0-AeA"/>
+                        <outlet property="navBarTitle" destination="jml-xH-Of5" id="YTs-sc-0Nj"/>
+                        <segue destination="DU5-I6-tVT" kind="show" identifier="toAddPhoto" id="QhM-X9-C1O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1c-ww-HtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1336.8" y="132.68365817091455"/>
         </scene>
-        <!--Create Album-->
+        <!--Add Photo-->
         <scene sceneID="97i-Pp-Hvg">
             <objects>
                 <viewController id="DU5-I6-tVT" customClass="AddPhotoVC" customModule="PhotoVault" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,31 +177,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnx-Qd-uGN">
-                                <rect key="frame" x="139" y="97" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Rx-Cr-JGb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Rx-Cr-JGb" secondAttribute="height" multiplier="1:1" id="VI5-oK-gk9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-if-PGD">
+                                <rect key="frame" x="60" y="499" width="255" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Select Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPhotoBtnPressed:" destination="DU5-I6-tVT" eventType="touchUpInside" id="Exl-pu-e4Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Rx-Cr-JGb" firstAttribute="trailing" secondItem="MMC-EH-Wi6" secondAttribute="trailing" id="8jh-NP-Tab"/>
+                            <constraint firstItem="DbQ-if-PGD" firstAttribute="centerX" secondItem="MMC-EH-Wi6" secondAttribute="centerX" id="9KB-bc-ZuS"/>
+                            <constraint firstItem="4Rx-Cr-JGb" firstAttribute="top" secondItem="MMC-EH-Wi6" secondAttribute="top" id="Q2p-Um-jtK"/>
+                            <constraint firstItem="DbQ-if-PGD" firstAttribute="top" secondItem="4Rx-Cr-JGb" secondAttribute="bottom" constant="60" id="WOf-V0-bOi"/>
+                            <constraint firstItem="MMC-EH-Wi6" firstAttribute="trailing" secondItem="DbQ-if-PGD" secondAttribute="trailing" constant="60" id="cDo-tb-bxd"/>
+                            <constraint firstItem="4Rx-Cr-JGb" firstAttribute="leading" secondItem="MMC-EH-Wi6" secondAttribute="leading" id="mh2-BR-OxE"/>
+                            <constraint firstItem="DbQ-if-PGD" firstAttribute="leading" secondItem="MMC-EH-Wi6" secondAttribute="leading" constant="60" id="rw4-Ht-7a7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MMC-EH-Wi6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Create Album" id="Onc-SE-FqY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="apk-qH-TNh">
+                    <navigationItem key="navigationItem" title="Add Photo" id="Onc-SE-FqY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="apk-qH-TNh">
                             <connections>
-                                <action selector="saveBtnPressed:" destination="DU5-I6-tVT" id="3W4-Y1-Rb2"/>
+                                <action selector="addBtnPressed:" destination="DU5-I6-tVT" id="KMR-03-Soq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="albumTitleTF" destination="rnx-Qd-uGN" id="gZV-vw-VU8"/>
+                        <outlet property="imageView" destination="4Rx-Cr-JGb" id="Kwr-BQ-0dT"/>
+                        <segue destination="cuW-Dl-L84" kind="unwind" identifier="unwindToViewAlbum" unwindAction="prepareForUnwindToViewAlbumWithSegue:" id="UiY-pF-cQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3k-my-gRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cuW-Dl-L84" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="133"/>
+            <point key="canvasLocation" x="2029.5999999999999" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rid-Rx-Fjd">
@@ -202,6 +250,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addPhoto" width="29" height="27"/>
         <image name="settings" width="25" height="25"/>
     </resources>
 </document>

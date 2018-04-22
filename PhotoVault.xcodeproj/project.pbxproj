@@ -23,6 +23,7 @@
 		5F078D80208D250B00C3FCBF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D7E208D250B00C3FCBF /* UIColorExtension.swift */; };
 		5F078D82208D286E00C3FCBF /* AddPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */; };
 		5F078D84208D29E400C3FCBF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D83208D29E400C3FCBF /* AlbumCell.swift */; };
+		5F078D86208D394C00C3FCBF /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D85208D394B00C3FCBF /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5F078D7E208D250B00C3FCBF /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoVC.swift; sourceTree = "<group>"; };
 		5F078D83208D29E400C3FCBF /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		5F078D85208D394B00C3FCBF /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		C61A4D209D506B32E9B58FC0 /* Pods-PhotoVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVault.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault.debug.xcconfig"; sourceTree = "<group>"; };
 		D74E77DAE764B13686632BB5 /* Pods-PhotoVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVault.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,8 +103,8 @@
 			children = (
 				5F078D71208D202B00C3FCBF /* PasscodeVC.swift */,
 				5F078D77208D21BB00C3FCBF /* AlbumVC.swift */,
-				5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */,
 				5F078D7B208D228E00C3FCBF /* ViewAlbumVC.swift */,
+				5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */,
 				5F078D74208D204900C3FCBF /* PasscodeTVC.swift */,
 				5F078D73208D204800C3FCBF /* ChangePasscodeVC.swift */,
 			);
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				5F078D83208D29E400C3FCBF /* AlbumCell.swift */,
+				5F078D85208D394B00C3FCBF /* PhotoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				5F078D7F208D250B00C3FCBF /* UIViewControllerExtension.swift in Sources */,
 				5F078D7C208D228E00C3FCBF /* ViewAlbumVC.swift in Sources */,
 				5F078D72208D202B00C3FCBF /* PasscodeVC.swift in Sources */,
+				5F078D86208D394C00C3FCBF /* PhotoCell.swift in Sources */,
 				5F078D54208D1ED300C3FCBF /* AppDelegate.swift in Sources */,
 				5F078D82208D286E00C3FCBF /* AddPhotoVC.swift in Sources */,
 				5F078D70208D1F4C00C3FCBF /* Constants.swift in Sources */,

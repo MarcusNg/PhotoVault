@@ -21,6 +21,6 @@ let TO_EMOTION_COLOR = "toEmotionColor"
 let TO_PASSCODE_LOCK = "toPasscodeLock"
 let TO_CHANGE_PASSCODE = "toChangePasscode"
 
-let UNWIND_TO_ALBUMS = "unwindToAlbums"
+let UNWIND_TO_VIEW_ALBUM = "unwindToViewAlbum"
 let UNWIND_TO_PASSCODETVC = "undwindToPasscodeTVC"
 
