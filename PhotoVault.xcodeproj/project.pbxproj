@@ -24,6 +24,7 @@
 		5F078D82208D286E00C3FCBF /* AddPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */; };
 		5F078D84208D29E400C3FCBF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D83208D29E400C3FCBF /* AlbumCell.swift */; };
 		5F078D86208D394C00C3FCBF /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D85208D394B00C3FCBF /* PhotoCell.swift */; };
+		5FA6BEB1208D4C6900623A79 /* ViewPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6BEB0208D4C6900623A79 /* ViewPhotoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoVC.swift; sourceTree = "<group>"; };
 		5F078D83208D29E400C3FCBF /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		5F078D85208D394B00C3FCBF /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		5FA6BEB0208D4C6900623A79 /* ViewPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoVC.swift; sourceTree = "<group>"; };
 		C61A4D209D506B32E9B58FC0 /* Pods-PhotoVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVault.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault.debug.xcconfig"; sourceTree = "<group>"; };
 		D74E77DAE764B13686632BB5 /* Pods-PhotoVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVault.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 				5F078D77208D21BB00C3FCBF /* AlbumVC.swift */,
 				5F078D7B208D228E00C3FCBF /* ViewAlbumVC.swift */,
 				5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */,
+				5FA6BEB0208D4C6900623A79 /* ViewPhotoVC.swift */,
 				5F078D74208D204900C3FCBF /* PasscodeTVC.swift */,
 				5F078D73208D204800C3FCBF /* ChangePasscodeVC.swift */,
 			);
@@ -312,6 +315,7 @@
 			files = (
 				5F078D75208D204900C3FCBF /* ChangePasscodeVC.swift in Sources */,
 				5F078D84208D29E400C3FCBF /* AlbumCell.swift in Sources */,
+				5FA6BEB1208D4C6900623A79 /* ViewPhotoVC.swift in Sources */,
 				5F078D5C208D1ED300C3FCBF /* PhotoVault.xcdatamodeld in Sources */,
 				5F078D7F208D250B00C3FCBF /* UIViewControllerExtension.swift in Sources */,
 				5F078D7C208D228E00C3FCBF /* ViewAlbumVC.swift in Sources */,

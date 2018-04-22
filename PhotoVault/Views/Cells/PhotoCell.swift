@@ -13,7 +13,7 @@ class PhotoCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     func configure(imageData: Data) {
-        imageView.image = UIImage(data: imageData, scale: 1.0)
+        imageView.image = UIImage(data: imageData)
     }
     
 }

@@ -163,11 +163,50 @@
                         <outlet property="collectionView" destination="31p-3K-adP" id="KNn-Q0-AeA"/>
                         <outlet property="navBarTitle" destination="jml-xH-Of5" id="YTs-sc-0Nj"/>
                         <segue destination="DU5-I6-tVT" kind="show" identifier="toAddPhoto" id="QhM-X9-C1O"/>
+                        <segue destination="zoC-8j-Fxd" kind="show" identifier="toViewPhoto" id="Vqy-W0-CJ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1c-ww-HtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1336.8" y="132.68365817091455"/>
+        </scene>
+        <!--View PhotoVC-->
+        <scene sceneID="Wfs-2J-v5M">
+            <objects>
+                <viewController id="zoC-8j-Fxd" customClass="ViewPhotoVC" customModule="PhotoVault" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fmu-MH-n1y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-65-4Qq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jLH-65-4Qq" firstAttribute="top" secondItem="TEp-b9-aMO" secondAttribute="top" id="Cim-P7-dQq"/>
+                            <constraint firstItem="jLH-65-4Qq" firstAttribute="leading" secondItem="TEp-b9-aMO" secondAttribute="leading" id="USg-7H-kIt"/>
+                            <constraint firstItem="jLH-65-4Qq" firstAttribute="trailing" secondItem="TEp-b9-aMO" secondAttribute="trailing" id="kfY-kE-wu9"/>
+                            <constraint firstItem="jLH-65-4Qq" firstAttribute="bottom" secondItem="TEp-b9-aMO" secondAttribute="bottom" id="s8a-V0-ve8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TEp-b9-aMO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e9q-Rf-6kS">
+                        <barButtonItem key="rightBarButtonItem" image="trash" id="WXL-Hc-bzP">
+                            <connections>
+                                <action selector="deleteBtnPressed:" destination="zoC-8j-Fxd" id="r5z-l4-Diq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="jLH-65-4Qq" id="IHR-ig-T5Z"/>
+                        <segue destination="pfF-8m-LhH" kind="unwind" identifier="unwindToViewAlbum" unwindAction="prepareForUnwindToViewAlbumWithSegue:" id="0RW-kO-DQv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA1-yX-6hz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pfF-8m-LhH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="812.74362818590714"/>
         </scene>
         <!--Add Photo-->
         <scene sceneID="97i-Pp-Hvg">
@@ -252,5 +291,6 @@
     <resources>
         <image name="addPhoto" width="29" height="27"/>
         <image name="settings" width="25" height="25"/>
+        <image name="trash" width="24" height="27"/>
     </resources>
 </document>

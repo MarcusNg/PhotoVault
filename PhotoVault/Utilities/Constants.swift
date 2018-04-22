@@ -15,6 +15,7 @@ let appDelegate = UIApplication.shared.delegate as? AppDelegate
 let TO_NAVIGATION = "toNavigation"
 let TO_VIEW_ALBUM = "toViewAlbum"
 let TO_ADD_PHOTO = "toAddPhoto"
+let TO_VIEW_PHOTO = "toViewPhoto"
 let TO_SETTINGS = "toSettings"
 let TO_SELECT_EMOTION = "toSelectEmotion"
 let TO_EMOTION_COLOR = "toEmotionColor"

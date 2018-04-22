@@ -17,6 +17,7 @@ class ViewAlbumVC: UIViewController {
     @IBAction func prepareForUnwindToViewAlbum(segue: UIStoryboardSegue) {}
     
     var albumTitle: String?
+    var selectedRow: Int?
     
     var photos = [Photo]() {
         didSet {
@@ -31,6 +32,18 @@ class ViewAlbumVC: UIViewController {
         collectionView.dataSource = self
         
         navBarTitle.title = albumTitle
+        
+        // Collection View
+        let itemSize = UIScreen.main.bounds.width / 3 - 5
+    
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsetsMake(5, 2.5, 5, 2.5)
+        layout.itemSize = CGSize(width: itemSize, height: itemSize)
+        
+        layout.minimumLineSpacing = 3
+        layout.minimumInteritemSpacing = 3
+        
+        collectionView.collectionViewLayout = layout
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,6 +55,12 @@ class ViewAlbumVC: UIViewController {
         if segue.identifier == TO_ADD_PHOTO {
             if let addPhotoVC = segue.destination as? AddPhotoVC {
                 addPhotoVC.initData(title: albumTitle!)
+            }
+        } else if segue.identifier == TO_VIEW_PHOTO {
+            if let viewPhotoVC = segue.destination as? ViewPhotoVC {
+                if let row = selectedRow {
+                    viewPhotoVC.initData(img: photos[row])
+                }
             }
         }
     }
@@ -98,4 +117,10 @@ extension ViewAlbumVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.configure(imageData: photos[indexPath.row].image!)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedRow = indexPath.row
+        performSegue(withIdentifier: TO_VIEW_PHOTO, sender: nil)
+    }
+    
 }
