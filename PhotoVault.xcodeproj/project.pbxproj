@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CA8F68D981C11A8781564D /* Pods_PhotoVault.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D3C84446BCC59FB1A791E9 /* Pods_PhotoVault.framework */; };
 		5F078D54208D1ED300C3FCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D53208D1ED300C3FCBF /* AppDelegate.swift */; };
-		5F078D56208D1ED300C3FCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D55208D1ED300C3FCBF /* ViewController.swift */; };
 		5F078D59208D1ED300C3FCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F078D57208D1ED300C3FCBF /* Main.storyboard */; };
 		5F078D5C208D1ED300C3FCBF /* PhotoVault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D5A208D1ED300C3FCBF /* PhotoVault.xcdatamodeld */; };
 		5F078D5E208D1ED300C3FCBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F078D5D208D1ED300C3FCBF /* Assets.xcassets */; };
 		5F078D61208D1ED300C3FCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F078D5F208D1ED300C3FCBF /* LaunchScreen.storyboard */; };
 		5F078D70208D1F4C00C3FCBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D6F208D1F4C00C3FCBF /* Constants.swift */; };
+		5F078D72208D202B00C3FCBF /* PasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D71208D202B00C3FCBF /* PasscodeVC.swift */; };
+		5F078D75208D204900C3FCBF /* ChangePasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D73208D204800C3FCBF /* ChangePasscodeVC.swift */; };
+		5F078D76208D204900C3FCBF /* PasscodeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D74208D204900C3FCBF /* PasscodeTVC.swift */; };
+		5F078D78208D21BB00C3FCBF /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D77208D21BB00C3FCBF /* AlbumVC.swift */; };
+		5F078D7C208D228E00C3FCBF /* ViewAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D7B208D228E00C3FCBF /* ViewAlbumVC.swift */; };
+		5F078D7F208D250B00C3FCBF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D7D208D250B00C3FCBF /* UIViewControllerExtension.swift */; };
+		5F078D80208D250B00C3FCBF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D7E208D250B00C3FCBF /* UIColorExtension.swift */; };
+		5F078D82208D286E00C3FCBF /* AddPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */; };
+		5F078D84208D29E400C3FCBF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D83208D29E400C3FCBF /* AlbumCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37D3C84446BCC59FB1A791E9 /* Pods_PhotoVault.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoVault.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F078D50208D1ED200C3FCBF /* PhotoVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F078D53208D1ED300C3FCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F078D55208D1ED300C3FCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F078D58208D1ED300C3FCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F078D5B208D1ED300C3FCBF /* PhotoVault.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoVault.xcdatamodel; sourceTree = "<group>"; };
 		5F078D5D208D1ED300C3FCBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F078D60208D1ED300C3FCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F078D62208D1ED300C3FCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F078D6F208D1F4C00C3FCBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F078D71208D202B00C3FCBF /* PasscodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeVC.swift; sourceTree = "<group>"; };
+		5F078D73208D204800C3FCBF /* ChangePasscodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasscodeVC.swift; sourceTree = "<group>"; };
+		5F078D74208D204900C3FCBF /* PasscodeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeTVC.swift; sourceTree = "<group>"; };
+		5F078D77208D21BB00C3FCBF /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
+		5F078D7B208D228E00C3FCBF /* ViewAlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAlbumVC.swift; sourceTree = "<group>"; };
+		5F078D7D208D250B00C3FCBF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5F078D7E208D250B00C3FCBF /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoVC.swift; sourceTree = "<group>"; };
+		5F078D83208D29E400C3FCBF /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		C61A4D209D506B32E9B58FC0 /* Pods-PhotoVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVault.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault.debug.xcconfig"; sourceTree = "<group>"; };
+		D74E77DAE764B13686632BB5 /* Pods-PhotoVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVault.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CA8F68D981C11A8781564D /* Pods_PhotoVault.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +65,8 @@
 			children = (
 				5F078D52208D1ED200C3FCBF /* PhotoVault */,
 				5F078D51208D1ED200C3FCBF /* Products */,
+				77D9EE9D6985DAC98B03E7D3 /* Pods */,
+				91F6A94FD14B4134DA603078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +88,10 @@
 				5F078D69208D1F0B00C3FCBF /* Views */,
 				5F078D68208D1EFC00C3FCBF /* Controllers */,
 				5F078D53208D1ED300C3FCBF /* AppDelegate.swift */,
-				5F078D55208D1ED300C3FCBF /* ViewController.swift */,
 				5F078D57208D1ED300C3FCBF /* Main.storyboard */,
 				5F078D5D208D1ED300C3FCBF /* Assets.xcassets */,
 				5F078D5F208D1ED300C3FCBF /* LaunchScreen.storyboard */,
 				5F078D62208D1ED300C3FCBF /* Info.plist */,
-				5F078D5A208D1ED300C3FCBF /* PhotoVault.xcdatamodeld */,
 			);
 			path = PhotoVault;
 			sourceTree = "<group>";
@@ -78,6 +99,12 @@
 		5F078D68208D1EFC00C3FCBF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5F078D71208D202B00C3FCBF /* PasscodeVC.swift */,
+				5F078D77208D21BB00C3FCBF /* AlbumVC.swift */,
+				5F078D81208D286E00C3FCBF /* AddPhotoVC.swift */,
+				5F078D7B208D228E00C3FCBF /* ViewAlbumVC.swift */,
+				5F078D74208D204900C3FCBF /* PasscodeTVC.swift */,
+				5F078D73208D204800C3FCBF /* ChangePasscodeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,6 +120,7 @@
 		5F078D6A208D1F0E00C3FCBF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5F078D83208D29E400C3FCBF /* AlbumCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -100,6 +128,7 @@
 		5F078D6B208D1F1B00C3FCBF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5F078D5A208D1ED300C3FCBF /* PhotoVault.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +136,8 @@
 		5F078D6C208D1F2100C3FCBF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5F078D7D208D250B00C3FCBF /* UIViewControllerExtension.swift */,
+				5F078D7E208D250B00C3FCBF /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +157,23 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		77D9EE9D6985DAC98B03E7D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C61A4D209D506B32E9B58FC0 /* Pods-PhotoVault.debug.xcconfig */,
+				D74E77DAE764B13686632BB5 /* Pods-PhotoVault.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91F6A94FD14B4134DA603078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37D3C84446BCC59FB1A791E9 /* Pods_PhotoVault.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F078D65208D1ED300C3FCBF /* Build configuration list for PBXNativeTarget "PhotoVault" */;
 			buildPhases = (
+				AFAE9D71F1C6CD60CD2ECC47 /* [CP] Check Pods Manifest.lock */,
 				5F078D4C208D1ED200C3FCBF /* Sources */,
 				5F078D4D208D1ED200C3FCBF /* Frameworks */,
 				5F078D4E208D1ED200C3FCBF /* Resources */,
+				C7C64FA21386C317B3AE13B8 /* [CP] Embed Pods Frameworks */,
+				74FB5F421186F17D1003DC11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,15 +244,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74FB5F421186F17D1003DC11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFAE9D71F1C6CD60CD2ECC47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoVault-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C64FA21386C317B3AE13B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFDateHelper/AFDateHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SmileLock/SmileLock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFDateHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmileLock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoVault/Pods-PhotoVault-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F078D4C208D1ED200C3FCBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F078D56208D1ED300C3FCBF /* ViewController.swift in Sources */,
+				5F078D75208D204900C3FCBF /* ChangePasscodeVC.swift in Sources */,
+				5F078D84208D29E400C3FCBF /* AlbumCell.swift in Sources */,
 				5F078D5C208D1ED300C3FCBF /* PhotoVault.xcdatamodeld in Sources */,
+				5F078D7F208D250B00C3FCBF /* UIViewControllerExtension.swift in Sources */,
+				5F078D7C208D228E00C3FCBF /* ViewAlbumVC.swift in Sources */,
+				5F078D72208D202B00C3FCBF /* PasscodeVC.swift in Sources */,
 				5F078D54208D1ED300C3FCBF /* AppDelegate.swift in Sources */,
+				5F078D82208D286E00C3FCBF /* AddPhotoVC.swift in Sources */,
 				5F078D70208D1F4C00C3FCBF /* Constants.swift in Sources */,
+				5F078D80208D250B00C3FCBF /* UIColorExtension.swift in Sources */,
+				5F078D76208D204900C3FCBF /* PasscodeTVC.swift in Sources */,
+				5F078D78208D21BB00C3FCBF /* AlbumVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +453,7 @@
 		};
 		5F078D66208D1ED300C3FCBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61A4D209D506B32E9B58FC0 /* Pods-PhotoVault.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -351,6 +469,7 @@
 		};
 		5F078D67208D1ED300C3FCBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74E77DAE764B13686632BB5 /* Pods-PhotoVault.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
