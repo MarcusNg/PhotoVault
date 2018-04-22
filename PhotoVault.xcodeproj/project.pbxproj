@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F078D54208D1ED300C3FCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D53208D1ED300C3FCBF /* AppDelegate.swift */; };
+		5F078D56208D1ED300C3FCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D55208D1ED300C3FCBF /* ViewController.swift */; };
+		5F078D59208D1ED300C3FCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F078D57208D1ED300C3FCBF /* Main.storyboard */; };
+		5F078D5C208D1ED300C3FCBF /* PhotoVault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F078D5A208D1ED300C3FCBF /* PhotoVault.xcdatamodeld */; };
+		5F078D5E208D1ED300C3FCBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F078D5D208D1ED300C3FCBF /* Assets.xcassets */; };
+		5F078D61208D1ED300C3FCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F078D5F208D1ED300C3FCBF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F078D50208D1ED200C3FCBF /* PhotoVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F078D53208D1ED300C3FCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F078D55208D1ED300C3FCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F078D58208D1ED300C3FCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F078D5B208D1ED300C3FCBF /* PhotoVault.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoVault.xcdatamodel; sourceTree = "<group>"; };
+		5F078D5D208D1ED300C3FCBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F078D60208D1ED300C3FCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F078D62208D1ED300C3FCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F078D4D208D1ED200C3FCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F078D47208D1ED200C3FCBF = {
+			isa = PBXGroup;
+			children = (
+				5F078D52208D1ED200C3FCBF /* PhotoVault */,
+				5F078D51208D1ED200C3FCBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F078D51208D1ED200C3FCBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F078D50208D1ED200C3FCBF /* PhotoVault.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F078D52208D1ED200C3FCBF /* PhotoVault */ = {
+			isa = PBXGroup;
+			children = (
+				5F078D53208D1ED300C3FCBF /* AppDelegate.swift */,
+				5F078D55208D1ED300C3FCBF /* ViewController.swift */,
+				5F078D57208D1ED300C3FCBF /* Main.storyboard */,
+				5F078D5D208D1ED300C3FCBF /* Assets.xcassets */,
+				5F078D5F208D1ED300C3FCBF /* LaunchScreen.storyboard */,
+				5F078D62208D1ED300C3FCBF /* Info.plist */,
+				5F078D5A208D1ED300C3FCBF /* PhotoVault.xcdatamodeld */,
+			);
+			path = PhotoVault;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F078D4F208D1ED200C3FCBF /* PhotoVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F078D65208D1ED300C3FCBF /* Build configuration list for PBXNativeTarget "PhotoVault" */;
+			buildPhases = (
+				5F078D4C208D1ED200C3FCBF /* Sources */,
+				5F078D4D208D1ED200C3FCBF /* Frameworks */,
+				5F078D4E208D1ED200C3FCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoVault;
+			productName = PhotoVault;
+			productReference = 5F078D50208D1ED200C3FCBF /* PhotoVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F078D48208D1ED200C3FCBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Marcus Ng";
+				TargetAttributes = {
+					5F078D4F208D1ED200C3FCBF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F078D4B208D1ED200C3FCBF /* Build configuration list for PBXProject "PhotoVault" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F078D47208D1ED200C3FCBF;
+			productRefGroup = 5F078D51208D1ED200C3FCBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F078D4F208D1ED200C3FCBF /* PhotoVault */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F078D4E208D1ED200C3FCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F078D61208D1ED300C3FCBF /* LaunchScreen.storyboard in Resources */,
+				5F078D5E208D1ED300C3FCBF /* Assets.xcassets in Resources */,
+				5F078D59208D1ED300C3FCBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F078D4C208D1ED200C3FCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F078D56208D1ED300C3FCBF /* ViewController.swift in Sources */,
+				5F078D5C208D1ED300C3FCBF /* PhotoVault.xcdatamodeld in Sources */,
+				5F078D54208D1ED300C3FCBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F078D57208D1ED300C3FCBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F078D58208D1ED300C3FCBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F078D5F208D1ED300C3FCBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F078D60208D1ED300C3FCBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F078D63208D1ED300C3FCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F078D64208D1ED300C3FCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F078D66208D1ED300C3FCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YCPCF4H7X;
+				INFOPLIST_FILE = PhotoVault/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcusNg.PhotoVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F078D67208D1ED300C3FCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YCPCF4H7X;
+				INFOPLIST_FILE = PhotoVault/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcusNg.PhotoVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F078D4B208D1ED200C3FCBF /* Build configuration list for PBXProject "PhotoVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F078D63208D1ED300C3FCBF /* Debug */,
+				5F078D64208D1ED300C3FCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F078D65208D1ED300C3FCBF /* Build configuration list for PBXNativeTarget "PhotoVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F078D66208D1ED300C3FCBF /* Debug */,
+				5F078D67208D1ED300C3FCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F078D5A208D1ED300C3FCBF /* PhotoVault.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F078D5B208D1ED300C3FCBF /* PhotoVault.xcdatamodel */,
+			);
+			currentVersion = 5F078D5B208D1ED300C3FCBF /* PhotoVault.xcdatamodel */;
+			path = PhotoVault.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F078D48208D1ED200C3FCBF /* Project object */;
+}
